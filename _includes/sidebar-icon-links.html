@@ -1,20 +1,14 @@
 <nav id="sidebar-icon-links">
-  {% if site.hydeout.repo %}
-    <a id="github-link"
-       class="icon" title="Github Project" aria-label="Github Project"
-       href="{{ site.hydeout.repo }}">
-      {% include svg/github.svg %}
-    </a>
-    <a id="github-download-link"
-       class="icon" title="Download" aria-label="Download"
-       href="{{ site.hydeout.repo }}/archive/v{{ site.hydeout.version }}.zip">
-      {% include svg/download.svg %}
-    </a>
-  {% endif %}
+  <a id="github-link"
+      class="icon" title="Github Profile" aria-label="Github Profile"
+      href="https://github.com/sarynm12">
 
-  <a id="subscribe-link"
-     class="icon" title="Subscribe" aria-label="Subscribe"
-     href="{{ site.feed.path | default: 'feed.xml' | relative_url }}">
-    {% include svg/feed.svg %}
+      {% include svg/github.svg %}
+  </a>
+
+  <a id="linkedin-link"
+     class="icon" title="Linkedin Profile" aria-label="Linkedin Profile"
+     href="https://www.linkedin.com/in/saryn-mooney-34503984/">
+    {% include svg/linkedin.svg %}
   </a>
 </nav>
